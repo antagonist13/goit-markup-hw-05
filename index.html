@@ -588,6 +588,7 @@
         </div>
       </div>
     </footer>
+    <!-- backdrop -->
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close" type="button">
@@ -606,40 +607,56 @@
         <form>
           <div>
             <label class="form-field-label" for="user-name">Name</label>
-            <input
-              class="form-input"
-              id="user-name"
-              name="user-name"
-              type="text"
-              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
-            />
+            <div class="form-input-label">
+              <input
+                class="form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+              />
+              <svg
+                class="subscribe-footer"
+                width="24"
+                height="24"
+                aria-label="icon human"
+              >
+                <use href="./images/icons.svg#icon-name-person"></use>
+              </svg>
+            </div>
           </div>
           <div>
             <label class="form-field-label" for="user-tel">Phone</label>
-            <input
-              class="form-input"
-              id="user-tel"
-              name="user-tel"
-              type="tel"
-            />
+            <div class="form-input-label">
+              <input
+                class="form-input"
+                id="user-tel"
+                name="user-tel"
+                type="tel"
+              />
+            </div>
           </div>
           <div>
             <label class="form-field-label" for="user-email">Email</label>
-            <input
-              class="form-input"
-              id="user-email"
-              name="user-email"
-              type="email"
-            />
+            <div class="form-input-label">
+              <input
+                class="form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+              />
+            </div>
           </div>
           <div>
             <label class="form-field-label" for="user-comment">Comment</label>
-            <textarea
-              class="form-comment"
-              id="user-comment"
-              name="user-comment"
-              placeholder="Text input"
-            ></textarea>
+            <div class="form-input-label">
+              <textarea
+                class="form-comment"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
           </div>
           <div>
             <input
