@@ -572,25 +572,35 @@
           </ul>
         </div>
         <div class="footer-third-part">
-          <label for="subscribe">Subscribe</label>
-          <input class="" type="email" name="" id="subscribe" />
-          <button type="submit">
-            Subscribe
-            <svg
-              class="subscribe-footer"
-              width="24"
-              height="24"
-              aria-label="icon subscribe"
-            >
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
+          <label class="footer-text-medium" for="subscribe-input"
+            >Subscribe</label
+          >
+          <div class="subscribe-part">
+            <input
+              class="subscribe-input"
+              id="subscribe-input"
+              name="user-email-subscribe"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg
+                class="subscribe-telegram-icon"
+                width="24"
+                height="24"
+                aria-label="icon subscribe"
+              >
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
     <!-- backdrop -->
-    <div class="backdrop">
-      <!-- ADD is-open to <div class="backdrop"> -->
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg
