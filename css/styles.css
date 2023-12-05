@@ -681,8 +681,9 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-left: 10px;
+  margin-left: 20px;
 }
+
 .privacy-link {
   color: #4d5ae5;
   text-decoration-line: underline;
@@ -694,7 +695,6 @@ img {
 }
 /* SPAN */
 .form-own-checkbox {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -705,6 +705,7 @@ img {
   fill: transparent;
 
   position: absolute;
+  display: inline-flex;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
