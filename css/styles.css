@@ -702,11 +702,15 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
+  fill: transparent;
 
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ICON */
 .form-own-checkbox-icon {
@@ -716,6 +720,8 @@ img {
 .form-checkbox:checked + .form-checkbox-label > .form-own-checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .form-checkbox:focus + .form-checkbox-label > .form-own-checkbox {
   outline: 2px solid rgba(0, 0, 255, 0.5);
