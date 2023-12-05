@@ -589,7 +589,8 @@
       </div>
     </footer>
     <!-- backdrop -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
+      <!-- ADD is-open to <div class="backdrop"> -->
       <div class="modal">
         <button class="modal-close" type="button">
           <svg
@@ -614,6 +615,7 @@
                 name="user-name"
                 type="text"
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                required
               />
               <svg
                 class="form-input-icon"
@@ -633,6 +635,7 @@
                 id="user-tel"
                 name="user-tel"
                 type="tel"
+                required
               />
               <svg
                 class="form-input-icon"
@@ -652,6 +655,7 @@
                 id="user-email"
                 name="user-email"
                 type="email"
+                required
               />
               <svg
                 class="form-input-icon"
@@ -671,20 +675,32 @@
                 id="user-comment"
                 name="user-comment"
                 placeholder="Text input"
+                required
               ></textarea>
             </div>
           </div>
-          <div class="form-field-wrapper">
+          <div class="form-checkbox-wrapper">
             <input
               class="form-checkbox"
               id="user-privacy-policy"
               name="user-privacy-policy"
               type="checkbox"
               value="true"
+              required
             />
             <label class="form-checkbox-label" for="user-privacy-policy">
               I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+              <a class="privacy-link" href="">Privacy Policy</a>
+              <span class="form-own-checkbox">
+                <svg
+                  class="form-own-checkbox-icon"
+                  width="10"
+                  height="8"
+                  aria-label="icon submit"
+                >
+                  <use href="./images/icons.svg#icon-submit"></use>
+                </svg>
+              </span>
             </label>
           </div>
           <button class="form-submit-btn" type="submit">Send</button>
