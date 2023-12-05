@@ -459,9 +459,10 @@ img {
 .footer-second-part {
   margin-right: 80px;
 }
-.subscribe-part {
+.subscribe-form {
   display: flex;
   flex-direction: row;
+  gap: 24px;
 }
 .subscribe-input {
   width: 264px;
@@ -472,7 +473,6 @@ img {
   background-color: transparent;
 
   padding: 16px;
-  margin-right: 24px;
 }
 .subscribe-input::placeholder {
   color: #fff;
